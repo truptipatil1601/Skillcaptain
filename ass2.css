@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors Example</title>
+
+    <style>
+        /* Style all paragraph elements */
+        p {
+            color: blue;
+            font-size: 16px;
+        }
+
+        /* Class selector for button */
+        .button {
+            background-color: lightgray;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        /* ID selector for header */
+        #header {
+            background-color: darkgray;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="header">
+        <h1>Welcome to CSS Styling</h1>
+    </header>
+
+    <p>This paragraph is styled using an element selector.</p>
+    <p>All paragraphs have blue color and 16px font size.</p>
+
+    <button class="button">Click Me</button>
+
+</body>
+</html>
