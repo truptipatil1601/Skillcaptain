@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Webpage</title>
+</head>
+
+<body>
+
+<button onclick="changeLanguage()">Switch Language</button>
+
+<h1 id="name">Trupti Patil</h1>
+<p id="welcome">Welcome to my webpage</p>
+
+<h3>My Hobbies</h3>
+<ul>
+  <li id="h1">Coding</li>
+  <li id="h2">Reading</li>
+  <li id="h3">Listening to Music</li>
+</ul>
+
+<script>
+  let isEnglish = true;
+
+  function changeLanguage() {
+    if (isEnglish) {
+      document.getElementById("name").innerHTML = "तृप्ती पाटील";
+      document.getElementById("welcome").innerHTML = "माझ्या वेबसाईटवर स्वागत आहे";
+      document.getElementById("h1").innerHTML = "कोडिंग";
+      document.getElementById("h2").innerHTML = "वाचन";
+      document.getElementById("h3").innerHTML = "संगीत ऐकणे";
+    } else {
+      document.getElementById("name").innerHTML = "Trupti Patil";
+      document.getElementById("welcome").innerHTML = "Welcome to my webpage";
+      document.getElementById("h1").innerHTML = "Coding";
+      document.getElementById("h2").innerHTML = "Reading";
+      document.getElementById("h3").innerHTML = "Listening to Music";
+    }
+    isEnglish = !isEnglish;
+  }
+</script>
+
+</body>
+</html>
