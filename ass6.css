@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lists and Links Styling</title>
+
+    <style>
+        ul{
+            list-style-type: square;
+            margin-bottom: 20px;
+        }
+
+        ol{
+            list-style-type: upper-roman;
+            margin-bottom: 20px;
+        }
+
+         a:link {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: green;
+        }
+
+        a:active {
+            color: red;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <h2>Unordered List</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <h2>Ordered List</h2>
+    <ol>
+        <li>Design</li>
+        <li>Develop</li>
+        <li>Deploy</li>
+    </ol>
+
+    <h2>Styled Links</h2>
+    <a href="#">Home</a><br>
+    <a href="#">About</a><br>
+    <a href="#">Contact</a>
+
+</body>
+</html>
+
+
+
+        
+        
