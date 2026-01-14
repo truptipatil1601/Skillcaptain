@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo Classes & Elements Demo</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 40px;
+        }
+
+        /* =========================
+           SERVICES LIST
+        ========================= */
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            max-width: 300px;
+        }
+
+        li {
+            padding: 12px;
+            margin-bottom: 8px;
+            background-color: #ffffff;
+            border-radius: 6px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        /* Hover effect */
+        li:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        /* Alternate background */
+        li:nth-child(odd) {
+            background-color: #e0e0e0;
+        }
+
+        /* Add emoji before each item */
+        li::before {
+            content: "🛠️ ";
+        }
+
+        /* Reduce opacity except Marketing */
+        li:not(.marketing) {
+            opacity: 0.5;
+        }
+
+        .marketing {
+            font-weight: bold;
+            opacity: 1;
+        }
+
+        /* =========================
+           CONTACT FORM
+        ========================= */
+
+        form {
+            margin-top: 40px;
+            max-width: 300px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        /* Focus highlight */
+        input:focus {
+            border-color: #3498db;
+            background-color: #eef6ff;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            position: relative;
+            transition: 0.3s;
+        }
+
+        /* Button hover */
+        button:hover {
+            background-color: #1f6fb2;
+        }
+
+        /* Arrow emoji after button */
+        button::after {
+            content: " ➡️";
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Our Services</h2>
+    <ul>
+        <li>Web Design</li>
+        <li class="marketing">Marketing</li>
+        <li>SEO</li>
+        <li>App Development</li>
+    </ul>
+
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <button type="submit">Send Message</button>
+    </form>
+
+</body>
+</html>
