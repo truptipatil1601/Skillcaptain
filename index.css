@@ -1,6 +1,19 @@
-body{
-    background-color: rgb(4, 159, 236);
-    font-family: Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Animation Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<h1
+    <button class="btn">Hover Me</button>
+
+    <div class="card">
+        <h3>Animated Card</h3>
+        <p>This card slides in from left.</p>
+    </div>
+
+    <div class="loader"></div>
+
+</body>
+</html>
